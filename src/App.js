@@ -19,6 +19,7 @@ import ThemeDemo from './pages/ThemeDemo';
 import Login from './pages/Login';
 import SignUp from './pages/SignUp';
 import LandingPage from './pages/LandingPage';
+import PrivateRoute from './components/PrivateRoute';
 import { Box } from '@mui/material';
 import { SMSStatsProvider } from './context/SMSStatsContext';
 import { ThemeModeProvider } from './context/ThemeContext';
@@ -57,7 +58,11 @@ function AppContent() {
                         <Route path="/" element={<LandingPage />} />
                         <Route path="/login" element={<Login />} />
                         <Route path="/signup" element={<SignUp />} />
-                        <Route path="/dashboard" element={<Dashboard sidebarOpen={sidebarOpen} />} />
+                        <Route path="/dashboard" element={
+                            <PrivateRoute>
+                                <Dashboard sidebarOpen={sidebarOpen} />
+                            </PrivateRoute>
+                        } />
                         <Route path="/sms" element={<SMS />} />
                         <Route path="/email" element={<Email />} />
                         <Route path="/chatbot" element={<Chatbot />} />
