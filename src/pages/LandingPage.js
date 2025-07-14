@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function LandingPage() {
     return (
@@ -46,7 +47,7 @@ export default function LandingPage() {
                         Supercharge your e-commerce with AI-powered automation, analytics, and communication tools.
                     </p>
                     <div style={{ display: 'flex', justifyContent: 'center', gap: 24 }}>
-                        <a href="/login" style={{
+                        <Link to="/login" style={{
                             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
                             color: 'white',
                             padding: '16px 40px',
@@ -56,8 +57,8 @@ export default function LandingPage() {
                             textDecoration: 'none',
                             boxShadow: '0 8px 24px rgba(102,126,234,0.2)',
                             transition: 'all 0.2s',
-                        }}>Sign In</a>
-                        <a href="/signup" style={{
+                        }}>Sign In</Link>
+                        <Link to="/signup" style={{
                             background: 'linear-gradient(135deg, #00C2FF 0%, #D6336C 100%)',
                             color: 'white',
                             padding: '16px 40px',
@@ -67,7 +68,7 @@ export default function LandingPage() {
                             textDecoration: 'none',
                             boxShadow: '0 8px 24px rgba(0,194,255,0.2)',
                             transition: 'all 0.2s',
-                        }}>Sign Up</a>
+                        }}>Sign Up</Link>
                     </div>
                 </div>
             </div>
