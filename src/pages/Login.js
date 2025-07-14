@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const API_URL = process.env.REACT_APP_API_URL;
 
@@ -117,7 +118,7 @@ export default function Login() {
                     </button>
                 </form>
                 <div style={{ textAlign: 'center', color: '#64748b', fontSize: '0.95rem' }}>
-                    Don&apos;t have an account? <a href="/signup" style={{ color: '#667eea', fontWeight: 600, textDecoration: 'none' }}>Sign Up</a>
+                    Don&apos;t have an account? <Link to="/signup" style={{ color: '#667eea', fontWeight: 600, textDecoration: 'none' }}>Sign Up</Link>
                 </div>
             </div>
         </div>
