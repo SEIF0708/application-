@@ -37,7 +37,7 @@ import { useThemeMode } from '../context/ThemeContext';
 import Logo from './Logo';
 
 const navItems = [
-    { label: 'Dashboard', icon: <Dashboard />, path: '/' },
+    { label: 'Dashboard', icon: <Dashboard />, path: '/dashboard' },
     { label: 'SMS', icon: <Sms />, path: '/sms' },
     { label: 'Email', icon: <Email />, path: '/email' },
     {
